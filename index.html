@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Font awesome css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Eccomerce</title>
+  </head>
+  <body>
+    <div class="all-header sticky-top bg-white">
+      <!-- Main header -->
+      <header>
+        <div class="dropdowns d-flex gap-3">
+          <div class="dropdown">
+            <div class="dropdown-toggle">EN</div>
+            <ul class="dropdown-menu"></ul>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown-toggle">USD</div>
+            <ul class="dropdown-menu"></ul>
+          </div>
+        </div>
+        <div
+          class="right_els list-unstyled d-flex items-center justify-content-around"
+        >
+          <li>
+            <i class="fa-solid fa-user"></i>
+            My profile
+          </li>
+          <a href="./cart.html" class="text-decoration-none">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="count_cart" id="count_cart"></span>
+          </a>
+          <li>Items</li>
+          <li class="price">$0.00</li>
+          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        </div>
+      </header>
+
+      <!-- Second header -->
+      <div class="second_header">
+        <a href="#" class="logo_brand text-decoration-none">
+          <img src="./images/logo.png" />
+          <p>E-Comm</p>
+        </a>
+        <div class="links">
+          <a href="#" class="active">Home</a>
+          <a>BAGS</a>
+          <a>SNEAKERS</a>
+          <a>BELT</a>
+          <a>CONTACT</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="main_cont">
+      <h2 class="title">
+        Super Flash <br />
+        50% Off
+      </h2>
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+    <div class="cards_main_con d-flex mx-auto">
+      <img src="./images/card-1.png" alt="product" />
+      <img src="./images/card-2.png" alt="product" />
+      <img src="./images/card-3.png" alt="product" />
+    </div>
+
+    <section class="best_seller">
+      <h2 class="title text-center">BEST SELLER</h2>
+      <ul class="categories d-flex align-items-center justify-content-around list-unstyled">
+     
+      </ul>
+      <div class="cards_wrp gap-1 mt-2 d-flex justify-between flex-wrap" id="cards_wrp">
+        
+      </div>
+      <h3 class="load_more" id="load_more">LOAD MORE</h3>
+    </section>
+
+    <section class="py-3  bottom_sec">
+        <div class="icons mx-auto d-flex justify-content-between align-items-center">
+            <div class="box d-flex flex-column align-items-center gap-5">
+                <img src="./images/icon-1.png" alt="FREE SHIPPING">
+                <p class="fs-5">FREE SHIPPING</p>
+            </div>
+            <div class="box d-flex flex-column align-items-center gap-5">
+                <img src="./images/icon-2.png" alt="100% REFUND">
+                <p class="fs-5">100% REFUND</p>
+            </div>
+            <div class="box d-flex flex-column align-items-center gap-5">
+                <img src="./images/icon-3.png" alt="SUPPORT 24/7">
+                <p class="fs-5">SUPPORT 24/7</p>
+            </div>
+        </div>
+        <div class="search_form d-flex  mx-auto mt-5">
+            <input type="text" class="form-control" placeholder="Search query...">
+            <button class="btn btn-info">Search</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="first d-flex justify-content-between ">
+         <div class="item d-flex flex-column gap-3 logo">
+            <a href="#" class="logo_brand text-decoration-none">
+                <img src="./images/logo.png" />
+                <p>E-Comm</p>
+              </a>
+              <p class="desc">Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry. Lorem <br> Ipsum has been the industry's standard <br> dummy text ever.Since the 1500s, when <br> an unknown printer.</p>
+         </div>
+         <div class="item d-flex flex-column gap-3 follow">
+            <h3 class="title">Follow Us</h3>
+            <p class="desc">Since the 1500s, when an unknown <br> printer took a galley of type and <br> scrambled.</p>
+            <div class="socials d-flex gap-5">
+                <i class="fa-brands fa-facebook-f" style="color: #385C8E;"></i>
+                <i class="fa-brands fa-twitter" style="color: #03A9F4;"></i>            </div>
+         </div>
+         <div class="item d-flex flex-column gap-3 contact">
+            <h3 class="title">Contact Us</h3>
+            <p class="address">
+                E-Comm, 4578 <br> Marmora Road, <br> Glasgow D04 89GR
+            </p>
+         </div>
+        </div>
+        <div class="second d-flex align-items-center justify-content-between">
+            <p class="left">© 2018 Ecommerce theme by www.bisenbaev.com</p>
+            <div class="plastic-cards d-flex gap-3">
+                <img src="./images/pl-card-1.png" alt="">
+                <img src="./images/pl-card-2.png" alt="">
+                <img src="./images/pl-card-3.png" alt="">
+                <img src="./images/pl-card-4.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Custom Js -->
+    <script src="./script.js"></script>
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
