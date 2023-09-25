@@ -17,8 +17,8 @@ function renderProduct(){
     productWrapper.innerHTML = ``;
     if(!productsInCart.length){
     //    productWrapper.innerHTML =` <h2>Not Found Product</h2>`
-    productWrapper.innerHTML = `<div class="shopping">
-    <a href="./index.html" class="text-center">Go shopping!</a>
+    productWrapper.innerHTML = `<div class="shopping d-flex justify-content-center align-items-center">
+    <a href="./index.html" class="text-center btn btn-info text-light mx-auto">Go shopping!</a>
     </div>`
     }
     productsInCart.forEach((el, idx)=>{
@@ -58,9 +58,9 @@ function renderProduct(){
                   localStorage.setItem('productInCart', JSON.stringify(productsInCart))
                 }
                 el.count -=1;
+                localStorage.setItem('productInCart', JSON.stringify(productsInCart))
                 renderProduct()
                 renderCheckOut()
-                localStorage.setItem('productInCart', JSON.stringify(productsInCart))
           })
           minusCounter.classList.add('indic')
           rightCounter.append(minusCounter)
@@ -71,9 +71,9 @@ function renderProduct(){
           plusCounter.classList.add('indic')
           plusCounter.addEventListener('click',()=>{
             el.count +=1;
+            localStorage.setItem('productInCart', JSON.stringify(productsInCart))
             renderProduct()
             renderCheckOut()
-            localStorage.setItem('productInCart', JSON.stringify(productsInCart))
           })
           plusCounter.innerHTML = '+'
           rightCounter.append(plusCounter)

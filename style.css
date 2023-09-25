@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Arial !important; */
+}
+
 .all-header {
   display: flex;
   flex-direction: column;
@@ -22,7 +29,8 @@ header .right_els {
 }
 
 header .right_els li {
-  font-family: Proxima Nova;
+  /* font-family: Proxima Nova; */
+  font-family: Arial;
   font-size: 20px;
   font-weight: 400;
   line-height: 24.36px;
@@ -55,7 +63,8 @@ header .right_els li.price {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -74,7 +83,8 @@ header .right_els li.price {
 
 .second_header .links a {
   text-decoration: none;
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
@@ -90,9 +100,12 @@ section.main_cont {
   height: 70vh;
   background-image: url(./images/Promotion\ Image.png);
 }
-
+.w-90{
+  width: 85%;
+}
 section.main_cont .title {
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 700;
   color: #ffffff !important;
   font-size: 64px;
@@ -103,21 +116,83 @@ section.main_cont .title {
 .cards_main_con {
   width: 90%;
   gap: 0;
-  transform: translateY(-13rem);
+  transform: translateY(-9.5rem);
   justify-content: center;
   gap: 0 !important;
 }
-.cards_main_con img {
-  height: 300px;
+.cards_main_con .card_box {
+  height: 380px;
+  background:#fff;
   width: 28.5%;
-  object-fit: cover;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards_main_con .card_box .top .title{
+  color: #223263;
+  /* font-family: Poppins; */
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+
+.cards_main_con .card_box .sale s{
+  color: #9098B1;
+  /* font-family: Poppins; */
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.5px;
+}
+.cards_main_con .card_box .sale span{
+  color: #FB7181;
+  /* font-family: Poppins; */
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.5px;
+}
+.cards_main_con .card_box .top .price{
+  color: #40BFFF;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 54px;
+  letter-spacing: 0.5px;
+}
+
+.cards_main_con .card_box img{
+  width: 85%;
+  height: 70%;
+}
+
+
+.cards_main_con .card_box:nth-child(1){
+  background:rgb(237, 236, 236);
+
+  /* background-image: url(./images/card-1.png); */
+}
+.cards_main_con .card_box:nth-child(2){
+  /* background-image: url(./images/card-2.png); */
+}
+.cards_main_con .card_box:nth-child(3){
+  /* background-image: url(./images/card-3.png); */
 }
 
 section.best_seller {
   padding: 0.2em 2.5em 3em;
 }
 section.best_seller h2.title {
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 600;
   font-size: 35.5px;
   line-height: 52.5px;
@@ -125,7 +200,8 @@ section.best_seller h2.title {
 section.best_seller .categories {
   width: 45%;
   margin: 1.2em auto;
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 400;
   font-size: 22px;
   line-height: 33px;
@@ -148,7 +224,8 @@ section.best_seller .categories .active {
 }
 
 .load_more {
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 500;
   cursor: pointer;
   font-size: 20px;
@@ -210,7 +287,8 @@ section.best_seller .categories .active {
 
 .product_card .body .name {
   color: #223263;
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -219,7 +297,8 @@ section.best_seller .categories .active {
 
 .price {
   color: #40bfff;
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 700;
   font-size: 18px;
   line-height: 32.4px;
@@ -240,7 +319,8 @@ section.best_seller .categories .active {
 }
 
 .icons .box {
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 500;
   font-size: 27px;
   line-height: 40.5px;
@@ -266,7 +346,8 @@ section.best_seller .categories .active {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding: 0.7em 1em;
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
@@ -297,7 +378,8 @@ footer .first .item.logo .desc {
 }
 footer .first .item .title {
   color: #22262a;
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -305,14 +387,16 @@ footer .first .item .title {
 
 footer .first .item .address {
   color: #22262a;
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
 }
 footer .first .item .desc {
   color: #22262a;
-  font-family: Proxima Nova;
+  /* font-family: Proxima Nova; */
+  font-family: Arial;
   font-weight: 400;
   font-size: 12px;
   line-height: 14.62px;
@@ -324,7 +408,8 @@ footer .second {
 
 footer .second .left {
   color: #c1c8ce;
-  font-family: Proxima Nova;
+  /* font-family: Proxima Nova; */
+  font-family:Arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 17.05px;
@@ -332,7 +417,8 @@ footer .second .left {
 
 .cart .carts_product .top {
   color: #22262a;
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
@@ -344,7 +430,8 @@ footer .second .left {
 
  .title_c {
   color: #262626;
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -358,7 +445,8 @@ footer .second .left {
   height: 35px;
   display: flex;
   justify-content: space-around;
-  font-family: Proxima Nova;
+  /* font-family: Proxima Nova; */
+  font-family: Arial;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.92px;
@@ -379,7 +467,8 @@ footer .second .left {
 
 .shopping a{
     /* color: #; */
-    font-family: Poppins;
+    /* font-family: Poppins; */
+    font-family: Arial;
     font-size: 1.2em;
     transform: translateX(-100%);
 }
@@ -397,7 +486,8 @@ footer .second .left {
 
  .item_p {
   color: #262626;
-  font-family: Poppins;
+  /* font-family: Poppins; */
+  font-family: Arial;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -419,7 +509,8 @@ footer .second .left {
     padding: 0.6em;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    font-family: Poppins;
+    /* font-family: Poppins; */
+    font-family: Arial;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -430,7 +521,8 @@ footer .second .left {
     border-bottom-left-radius: 0;
     background: #33A0FF;
     color: #ffffff;
-    font-family: Poppins;
+    /* font-family: Poppins; */
+    font-family: Arial;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
@@ -453,7 +545,8 @@ footer .second .left {
 
 .checkout_sec .right .box .d-flex{
     color: #22262A;
-    font-family: Poppins;
+    /* font-family: Poppins; */
+    font-family: Arial;
     font-weight: 500;
     font-size: 30px;
     line-height: 45px;
@@ -461,7 +554,8 @@ footer .second .left {
  .checkout_btn{
 background: #53adfb;
 color: #FFFFFF !important;
-font-family: Poppins;
+/* font-family: Poppins; */
+font-family: Arial;
 font-weight: 500;
 font-size: 18px;
 line-height: 27px;
