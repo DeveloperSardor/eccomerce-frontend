@@ -570,3 +570,22 @@ background: #439ff0;
 
 
 
+
+
+
+.search-box input{
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  padding: 0.4em 0.9em;
+  font-family: Arial;
+  background: rgb(246, 246, 246);
+}
+.search-box button{
+  color: #fff;
+  font-family: Arial;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

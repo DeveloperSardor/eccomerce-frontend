@@ -120,6 +120,7 @@ function addToCart(el, product){
     }
     el.innerHTML = '✅'
     product.count = 1;
+    product.total = product.price;
     productsInCart.push(product)
     localStorage.setItem('productInCart', JSON.stringify(productsInCart))
     countCartFunc()
@@ -142,3 +143,33 @@ loadMore.addEventListener('click', async(e)=>{
 })
 
 
+const searchInput = document.querySelector('#search_input');
+const searchBtn = document.querySelector('#search_btn')
+
+
+searchInput.addEventListener('input', e=>searchProduct(e.target.value))
+searchBtn.addEventListener('click', ()=>searchProduct(searchInput.value))
+
+
+async function searchProduct(value){
+  if(!value.trim().length){
+    try {
+      const req = await fetch("https://fakestoreapi.com/products");
+      const res = await req.json();
+     renderProducts(res);
+    } catch (err) {
+      console.error(err);
+      alert("Mahsulotlarni olishda xatolik!");
+    }
+  }else {
+    try {
+      const req = await fetch("https://fakestoreapi.com/products");
+      let res = await req.json();
+       res = res.filter(el=>el.title.includes(value));
+     renderProducts(res);
+    } catch (err) {
+      console.error(err);
+      alert("Mahsulotlarni olishda xatolik!");
+    }
+  }
+}
